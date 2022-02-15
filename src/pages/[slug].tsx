@@ -12,7 +12,7 @@ const Page: NextPage<Props> = props => {
   return (
     <Fragment>
       <h1 className="text-2xl font-bold">{title}</h1>
-      <div className='prose' dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div className='prose prose-a:text-blue-500' dangerouslySetInnerHTML={{ __html: content }}></div>
     </Fragment>
   )
 }
@@ -28,8 +28,6 @@ export const getStaticProps: GetStaticProps<Props> = async ctx => {
   const fileContent = fs.readFileSync(filePath).toString()
 
   const { data: frontmatter, content } = matter(fileContent) 
-
-  console.log(frontmatter)
 
   return {
     props: {
