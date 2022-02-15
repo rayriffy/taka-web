@@ -1,3 +1,7 @@
+---
+title: Privacy Policy
+---
+
 **Privacy Policy**
 
 Phumrapee Limpianchop built the Taka app as an Open Source app. This SERVICE is provided by Phumrapee Limpianchop at no cost and is intended for use as is.
